@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Words.cs" />
     <EmbeddedResource Include="StoryWriterForm.resx">
       <DependentUpon>StoryWriterForm.cs</DependentUpon>
     </EmbeddedResource>
