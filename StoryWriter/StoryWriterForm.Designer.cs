@@ -41,6 +41,7 @@
             this.generateStoryButton.TabIndex = 0;
             this.generateStoryButton.Text = "Generate Story";
             this.generateStoryButton.UseVisualStyleBackColor = true;
+            this.generateStoryButton.Click += new System.EventHandler(this.generateStoryButton_Click);
             // 
             // outputTextBox
             // 

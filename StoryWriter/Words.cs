@@ -31,6 +31,7 @@ namespace StoryWriter
             Noun = new string[] { "boy", "girl", "dog", "town", "car" };
             Verb = new string[] { "drove", "jumped", "ran", "walked","skipped" };
             Preposition = new string[] { "to", "from", "over", "under","on" };
+            rand = new Random();
         }
 
         public readonly string[] Article;
@@ -39,15 +40,17 @@ namespace StoryWriter
         public readonly string[] Preposition;
 
         // Generates sentence from 6 words 
-        private string GenerateSentence()
+        public string GenerateSentence()
         {
             string word1 = GetWord("Article");
             word1 = Capitalize(word1);
             string word2 = GetWord("Noun");
             string word3 = GetWord("Verb");
             string word4 = GetWord("Preposition");
+            string word5 = GetWord("Article");
+            string word6 = GetWord("Noun");
 
-            return String.Format($"{word1} {word2} {word3} {word4} {word1} {word2}.");
+            return String.Format($"{word1} {word2} {word3} {word4} {word5} {word6}.  ");
         }
 
         // Get random word from pre-defined array 

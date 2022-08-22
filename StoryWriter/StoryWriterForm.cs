@@ -16,5 +16,18 @@ namespace StoryWriter
         {
             InitializeComponent();
         }
+
+        private void generateStoryButton_Click(object sender, EventArgs e)
+        {
+            Words words = new Words();
+            const int numberOfSentences = 10;
+
+            outputTextBox.Clear();
+
+            for (var i = 0; i < numberOfSentences; i++)
+            {
+                outputTextBox.Text += words.GenerateSentence() + Environment.NewLine;
+            }
+        }
     }
 }
